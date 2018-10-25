@@ -1,0 +1,8 @@
+<p>
+  Inside child1 {{name1}}
+  <br>
+  <input type="text" [(ngModel)]="outputname">
+ <button (click)="onClick()">Send Output</button><br/>
+  <button (click)="child2.changeName('From Button Click');">Change name by calling child method</button>
+  <app-child2  [name]="outputname" #child2></app-child2>
+</p>
